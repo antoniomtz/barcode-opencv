@@ -32,8 +32,7 @@ int main(int argc, char** argv)
 
     while(1)    
     {    
-       // Record the starting time
-        auto startTime = std::chrono::high_resolution_clock::now();
+
         cap >> frame;        
 
         barcodeDetector.detectAndDecodeWithType(frame,decoded_info,decoded_type,corners);
